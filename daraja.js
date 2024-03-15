@@ -5,11 +5,11 @@ function initiateSTKPush(phoneNumber, amount, reference, description) {
       unirest.post('https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest')
         .headers({
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer awGphFqD8M4AVUXqIPEyHPGkVA7Z'
+          'Authorization': 'Bearer xxxxxx'
         })
         .send({
           "BusinessShortCode": 174379,
-          "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjQwMzEyMjAxMjM3",
+          "Password": "xxxxxx",
           "Timestamp": "20240312201237",
           "TransactionType": "CustomerPayBillOnline",
           "Amount": amount,
@@ -33,5 +33,3 @@ function initiateSTKPush(phoneNumber, amount, reference, description) {
 module.exports = {
     initiateSTKPush: initiateSTKPush
 };
-
-//initiateSTKPush(254793599569, 1, "Lipa Fare", "Payment for x")

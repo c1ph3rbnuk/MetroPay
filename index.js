@@ -1,6 +1,6 @@
 // Set your app credentials
 const credentials = {
-    apiKey: '99d3a93d890d9db774da0e38db37fed9731a71ca8281e83a693ea0c02351a0c8',
+    apiKey: 'xxxxxx',
     username: 'votex',
 }
 
